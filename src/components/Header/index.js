@@ -3,6 +3,9 @@ import React, { useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 
+//Links
+import main_links from '../../constants/links';
+
 // styles
 import {
     TopHeader, BottomHeader, TopContainer,
@@ -12,7 +15,7 @@ import {
     Overlay, OpenOverlay, CloseOverlay, OverlayContent,
 } from './Header.styles'
 
-function Header() {
+const Header = ({ path }) => {
 
     const [overlayStatus, setOverlayStatus] = useState(false);
 
@@ -32,32 +35,13 @@ function Header() {
                 <TopContainer>
                     <LeftNav>
                         <ul>
-                            <li className='selected'>
-                                <Link to='/'>Medical Village</Link>
-                            </li>
-                            <li>
-                                <Link to='/hospital-home'>The Hospital</Link>
-                            </li>
-                            <li>
-                                <Link to='/nursing-home'>
-                                    Nursing School
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to='/geriatric-home'>
-                                    Geriatric Medical Center
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/oncology-home">
-                                    Oncology Medical Center
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to='/home-care-home'>
-                                    Home Care Center
-                                </Link>
-                            </li>
+                            {main_links.map((link) => {
+                                return (
+                                    <li key={link.id} className={path === link.url ? 'selected' : ''}>
+                                        <Link to={link.url}>{link.name}</Link>
+                                    </li>
+                                )
+                            })}
                         </ul>
                     </LeftNav>
                     <RightNav>

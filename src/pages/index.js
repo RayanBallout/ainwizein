@@ -11,10 +11,11 @@ import LatestNews from '../components/LatestNews';
 import PatientServices from '../components/PatientServices';
 import Footer from '../components/Footer';
 
-function index() {
+function index({ path }) {
+
   return (
     <Layout>
-      <Header />
+      <Header path={path} />
       <SideButtons />
       <main>
         <HeroBanner />
@@ -22,9 +23,7 @@ function index() {
         <LatestNews />
         <PatientServices />
       </main>
-
       <Footer />
-
     </Layout>
   )
 }
