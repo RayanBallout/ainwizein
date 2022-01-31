@@ -1,33 +1,33 @@
 const main_links = [
     {
-        id: 1,
         name: "Medical Village",
-        url: '/'
+        url: '/',
+        slug: 'medical-village'
     },
     {
-        id: 2,
         name: "The Hospital",
-        url: '/hospital-home/'
+        url: '/hospital-home/',
+        slug: 'hospital'
     },
     {
-        id: 3,
         name: "Nursing School",
-        url: "/nursing-home/"
+        url: "/nursing-home/",
+        slug: 'nursing'
     },
     {
-        id: 4,
         name: "Geriatric Medical Center",
-        url: '/geriatric-home/'
+        url: '/geriatric-home/',
+        slug: 'geriatric'
     },
     {
-        id: 5,
         name: "Oncology Medical Center",
-        url: "/oncology-home/"
+        url: "/oncology-home/",
+        slug: 'oncology'
     },
     {
-        id: 6,
         name: "Home Care Center",
-        url: "/home-care-home/"
+        url: "/home-care-home/",
+        slug: 'home-care'
     }
 ];
 

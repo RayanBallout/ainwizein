@@ -7,6 +7,14 @@
   --darkGreen:#0A6653;
   --lightBlue:#015782;
   --darkBlue:#024161;
+  --lightPurple:#9487B4;
+  --darkPurple:#5B4E79;
+  --lightOrange:#D25E33;
+  --darkOrange:#C55025;
+  --lightBabyBlue:#87BCAF;
+  --darkBabyBlue:#549C8A;
+  --lightPink:#C75A88;
+  --darkPink:#994066;
 }
 *{
   margin:0;

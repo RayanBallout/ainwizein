@@ -6,15 +6,15 @@ import Header from "../Header"
 import SideButtons from "../SideButtons"
 import Footer from "../Footer"
 
-export default function MedicalCenterLayout({ children }) {
+export default function MedicalVillageLayout({ children }) {
     return (
         <>
-            <Header layout="medical-center" />
-            <SideButtons layout="medical-center" />
+            <Header layout="medical-village" />
+            <SideButtons layout="medical-village" />
             <main>
                 {children}
             </main>
-            <Footer layout="medical-center" />
+            <Footer layout="medical-village" />
         </>
 
     )

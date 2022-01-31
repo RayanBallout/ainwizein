@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MedicalCenterLayout from '../components/Layout/home-care';
+import MedicalVillageLayout from '../components/Layout/medical-village';
 
 // components
 import HeroBanner from '../components/HeroBanner';
@@ -10,12 +10,12 @@ import PatientServices from '../components/PatientServices';
 
 const index = () => {
   return (
-    <MedicalCenterLayout>
+    <MedicalVillageLayout>
       <HeroBanner />
       <Facilities />
       <LatestNews />
       <PatientServices />
-    </MedicalCenterLayout>
+    </MedicalVillageLayout>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import OncologyLayout from '../components/Layout/home-care';
+import OncologyLayout from '../components/Layout/oncology';
 
 // components
 import HeroBanner from '../components/HeroBanner';

@@ -42,7 +42,7 @@ const Header = ({ layout }) => {
                         <ul>
                             {main_links.map((link) => {
                                 return (
-                                    <li key={link.id} className={layout === link.url ? 'selected' : ''}>
+                                    <li key={link.slug} className={layout === link.slug ? 'selected' : ''}>
                                         <Link to={link.url}>{link.name}</Link>
                                     </li>
                                 )
@@ -63,7 +63,7 @@ const Header = ({ layout }) => {
             <BottomHeader headerColor={headerChangeColor}>
                 <BottomContainer>
                     {
-                        layout === ('/') && (
+                        layout === ('medical-village') && (
                             (
                                 headerChangeColor &&
                                 <StaticImage

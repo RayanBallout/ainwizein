@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NursingLayout from '../components/Layout/home-care';
+import NursingLayout from '../components/Layout/nursing';
 
 // components
 import HeroBanner from '../components/HeroBanner';
