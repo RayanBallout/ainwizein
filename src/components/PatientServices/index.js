@@ -3,7 +3,8 @@ import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
 // styled components
-import { Container, Content, ServicesContainer, ServicesList, Service, LearnMore, ColoredService, ColoredServiceContent } from './PatientServices.styles'
+import { Container, Content, ServicesContainer, ServicesList, Service, ColoredService, ColoredServiceContent } from './PatientServices.styles'
+import { Link } from 'gatsby'
 
 function PatientServices() {
     return (
@@ -24,7 +25,7 @@ function PatientServices() {
                                 <h5>Check your result online</h5>
                                 <p>View your lab and x-ray results online within a few days</p>
                             </div>
-                            <LearnMore>Learn More</LearnMore>
+                            <Link to='/patient-services' className='learn-more'>Learn More</Link>
                         </Service>
                         <Service>
                             <div className="icon">
@@ -58,16 +59,16 @@ function PatientServices() {
                             <h5>NEED MORE INFO?</h5>
                             <p>We are here to provide you with the highest quality service & customer care.</p>
                             <div className="button-container">
-                                <a href="#" className="phone">
+                                <a href="tel:05501111" className="phone">
                                     <StaticImage
                                         src='../../images/icons/phone-call.svg'
                                         alt='Phone Icon'
                                     />
                                     <span>05501111</span>
                                 </a>
-                                <a href="#" className="contact">
+                                <Link to='/contact-us'>
                                     Contact Us
-                                </a>
+                                </Link>
                             </div>
                         </ColoredServiceContent>
                     </ColoredService>

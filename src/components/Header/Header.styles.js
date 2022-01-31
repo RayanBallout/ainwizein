@@ -46,7 +46,7 @@ export const LeftNav = styled.nav`
                 width:100%;
                 height: 4px;
                 background-color: var(--lightGreen);
-                bottom:-15px;
+                bottom:-14px;
                 left:0;
                 border-radius: 20px 20px 0 0;
             }

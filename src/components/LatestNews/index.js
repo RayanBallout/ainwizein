@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
 
 // styled components
 import { Container, Content, NewsContainer, NewsSection, ViewAllButton } from './LatestNews.styles'
@@ -43,7 +44,7 @@ function LatestNews() {
                     </NewsSection>
                 </NewsContainer>
                 <ViewAllButton>
-                    <a href="#">View All News</a>
+                    <Link to='/all-news'>View All News</Link>
                 </ViewAllButton>
             </Content>
         </Container>

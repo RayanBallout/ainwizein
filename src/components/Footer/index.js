@@ -50,31 +50,31 @@ function Footer() {
                         <p>© Copyright 2021 - All rights reserved for Ain WAZein Medical Center</p>
                     </div>
                     <SocialMediaContainer>
-                        <a href="">
+                        <a href="www.youtube.com">
                             <StaticImage
                                 src='../../images/icons/Youtube.svg'
                                 alt="Youtube icon"
                             />
                         </a>
-                        <a href="">
+                        <a href="www.facebook.com">
                             <StaticImage
                                 src='../../images/icons/facebook-icon.svg'
                                 alt="Facebook icon"
                             />
                         </a>
-                        <a href="">
+                        <a href="www.linkedin.com">
                             <StaticImage
                                 src="../../images/icons/linkedin.svg"
                                 alt="Linkedin icon"
                             />
                         </a>
-                        <a href="">
+                        <a href="www.twitter.com">
                             <StaticImage
                                 src="../../images/icons/Twitter.svg"
                                 alt="Twitter icon"
                             />
                         </a>
-                        <a href="">
+                        <a href="www.instagram.com">
                             <StaticImage
                                 src="../../images/icons/Instagram.svg"
                                 alt="Instagram icon"

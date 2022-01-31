@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import { StaticImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby';
 
 // styles
 import {
@@ -31,17 +32,41 @@ function Header() {
                 <TopContainer>
                     <LeftNav>
                         <ul>
-                            <li className='selected'>Medical Village</li>
-                            <li>The Hospital</li>
-                            <li>Nursing School</li>
-                            <li>Geriatric Medical Center</li>
-                            <li>Oncology Medical Center</li>
-                            <li>Home Care Center</li>
+                            <li className='selected'>
+                                <Link to='/'>Medical Village</Link>
+                            </li>
+                            <li>
+                                <Link to='/hospital-home'>The Hospital</Link>
+                            </li>
+                            <li>
+                                <Link to='/nursing-home'>
+                                    Nursing School
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to='/geriatric-home'>
+                                    Geriatric Medical Center
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/oncology-home">
+                                    Oncology Medical Center
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to='/home-care-home'>
+                                    Home Care Center
+                                </Link>
+                            </li>
                         </ul>
                     </LeftNav>
                     <RightNav>
                         <ul>
-                            <li>Careers</li>
+                            <li>
+                                <Link to='/careers'>
+                                    Careers
+                                </Link>
+                            </li>
                         </ul>
                     </RightNav>
                 </TopContainer>
@@ -68,7 +93,7 @@ function Header() {
                     }
                     <BottomButtons>
                         <SupportButton headerColor={headerChangeColor}>
-                            <a href="">Support Us</a>
+                            <Link to='/support-us'>Support Us</Link>
                         </SupportButton>
                         <OpenOverlay onClick={() => setOverlayStatus(true)}>
                             <div className="upper"></div>
@@ -81,7 +106,7 @@ function Header() {
             <Overlay show={overlayStatus}>
                 <div className="topNav">
                     <OverlaySupportButton show={overlayStatus}>
-                        <a href="">Support Us</a>
+                        <Link to='/support-us'>Support Us</Link>
                     </OverlaySupportButton>
                     <CloseOverlay onClick={() => setOverlayStatus(false)}>
                         <div className="tick1"></div>

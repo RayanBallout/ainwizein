@@ -32,17 +32,19 @@ export const Content = styled.div`
         font-size: 50px;
         font-weight: 600;
     }
+
+    .learn-more{
+        border: 2px solid white;
+        color: white;
+        padding: 12px 35px;
+        font-size: 16px;
+        max-width: 168px;
+        border-radius: 25px;
+        margin-top: 31px;
+    }
 `;
 
-export const LearnMore = styled.a`
-    border: 2px solid white;
-    color: white;
-    padding: 12px 35px;
-    font-size: 16px;
-    max-width: 168px;
-    border-radius: 25px;
-    margin-top: 31px;
-`;
+
 
 export const CovidBanner = styled.div`
     min-height: 170px;

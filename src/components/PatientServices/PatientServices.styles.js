@@ -79,16 +79,16 @@ export const Service = styled.div`
         flex-direction: column;
         padding: 10px 20px;
     }
-`;
 
-export const LearnMore = styled.a`
-    color: white;
-    padding: 10px 22px;
-    background-color: var(--lightGreen);
-    border-radius: 25px;
+    .learn-more{
+        color: white;
+        padding: 10px 22px;
+        background-color: var(--lightGreen);
+        border-radius: 25px;
 
-    @media (max-width: 992px){
-        justify-self: flex-end;
+        @media (max-width: 992px){
+            justify-self: flex-end;
+        }
     }
 `;
 
