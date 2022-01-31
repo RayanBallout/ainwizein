@@ -1,14 +1,18 @@
 import React from 'react'
 
 import { StaticImage } from 'gatsby-plugin-image';
+import chooseColor from '../../helpers/chooseColor';
 
 // Styled components
 import { Container, Content, Column, BottomFooter, BottomFooterContent, SocialMediaContainer } from './Footer.styles';
 
-function Footer() {
+function Footer({ path }) {
+
+    const { PrimaryColor, SecondaryColor } = chooseColor(path)
+
     return (
         <>
-            <Container>
+            <Container primary={PrimaryColor}>
                 <Content>
                     <Column>
                         <h5>Title Here</h5>
@@ -44,7 +48,7 @@ function Footer() {
                     </Column>
                 </Content>
             </Container>
-            <BottomFooter>
+            <BottomFooter secondary={SecondaryColor}>
                 <BottomFooterContent>
                     <div>
                         <p>© Copyright 2021 - All rights reserved for Ain WAZein Medical Center</p>

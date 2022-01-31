@@ -22,7 +22,7 @@ const HospitalHome = ({ path }) => {
                 <LatestNews />
                 <PatientServices />
             </main>
-            <Footer />
+            <Footer path={path} />
         </Layout>
     );
 };

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     padding: 91px 0px 195px 0px;
-    background-color: var(--lightGreen);
+    background-color: ${({ primary }) => `var(--${primary})`};
 `;
 
 export const Content = styled.div`
@@ -34,7 +34,7 @@ export const Column = styled.div`
 `;
 
 export const BottomFooter = styled.div`
-    background-color: #0A6653;
+    background-color:${({ secondary }) => `var(--${secondary})`};
     padding: 27px 0;
 `;
 
