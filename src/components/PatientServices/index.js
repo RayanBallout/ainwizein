@@ -15,7 +15,7 @@ function PatientServices() {
                         <Service>
                             <div className="icon">
                                 <StaticImage
-                                    src='../../images/check-result-online.svg'
+                                    src='../../images/icons/check-result-online.svg'
                                     alt="Check your result online"
                                     placeholder='tracedSVG'
                                 />
@@ -29,7 +29,7 @@ function PatientServices() {
                         <Service>
                             <div className="icon">
                                 <StaticImage
-                                    src='../../images/book-appointment.svg'
+                                    src='../../images/icons/book-appointment.svg'
                                     alt="Check your result online"
                                     placeholder='tracedSVG'
                                 />
@@ -42,7 +42,7 @@ function PatientServices() {
                         <Service>
                             <div className="icon">
                                 <StaticImage
-                                    src='../../images/stay-updated.svg'
+                                    src='../../images/icons/stay-updated.svg'
                                     alt="Stay Updated"
                                     placeholder='tracedSVG'
                                 />
@@ -60,7 +60,7 @@ function PatientServices() {
                             <div className="button-container">
                                 <a href="#" className="phone">
                                     <StaticImage
-                                        src='../../images/phone-call.svg'
+                                        src='../../images/icons/phone-call.svg'
                                         alt='Phone Icon'
                                     />
                                     <span>05501111</span>

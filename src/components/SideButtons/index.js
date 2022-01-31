@@ -14,7 +14,7 @@ function SideButtons() {
             <Button click={click}>
                 <Icon>
                     <StaticImage
-                        src='../../images/find-doctor.svg'
+                        src='../../images/icons/find-doctor.svg'
                         alt="Find a doctor icon"
                     />
                 </Icon>
@@ -23,7 +23,7 @@ function SideButtons() {
             <Button click={click}>
                 <Icon>
                     <StaticImage
-                        src='../../images/book-appointment-side.svg'
+                        src='../../images/icons/book-appointment-side.svg'
                         alt="Book and appointment icon"
                     />
                 </Icon>
@@ -32,7 +32,7 @@ function SideButtons() {
             <AddButton onClick={() => setClick(!click)} click={click}>
                 <Icon>
                     <StaticImage
-                        src='../../images/plus-icon.svg'
+                        src='../../images/icons/plus-icon.svg'
                         alt="Plus icon"
                     />
                 </Icon>

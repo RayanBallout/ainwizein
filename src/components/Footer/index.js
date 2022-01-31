@@ -52,31 +52,31 @@ function Footer() {
                     <SocialMediaContainer>
                         <a href="">
                             <StaticImage
-                                src='../../images/Youtube.svg'
+                                src='../../images/icons/Youtube.svg'
                                 alt="Youtube icon"
                             />
                         </a>
                         <a href="">
                             <StaticImage
-                                src='../../images/Facebook.svg'
+                                src='../../images/icons/facebook-icon.svg'
                                 alt="Facebook icon"
                             />
                         </a>
                         <a href="">
                             <StaticImage
-                                src="../../images/linkedin.svg"
+                                src="../../images/icons/linkedin.svg"
                                 alt="Linkedin icon"
                             />
                         </a>
                         <a href="">
                             <StaticImage
-                                src="../../images/Twitter.svg"
+                                src="../../images/icons/Twitter.svg"
                                 alt="Twitter icon"
                             />
                         </a>
                         <a href="">
                             <StaticImage
-                                src="../../images/Instagram.svg"
+                                src="../../images/icons/Instagram.svg"
                                 alt="Instagram icon"
                             />
                         </a>
