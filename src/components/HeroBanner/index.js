@@ -14,7 +14,7 @@ function HeroBanner({ layout }) {
     return (
         <SuperContainer>
             <StaticImage
-                src='../../images/banner-mc.jpg'
+                src='../../images/banners/medical-village-home.jpg'
                 alt='background banner'
                 layout='fixed'
                 className='background-image'

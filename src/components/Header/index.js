@@ -67,7 +67,7 @@ const Header = ({ layout }) => {
                             (
                                 headerChangeColor &&
                                 <StaticImage
-                                    src='../../images/color-mc.svg'
+                                    src='../../images/logos/medical-village-color.svg'
                                     alt="Medical Village Logo"
                                     placeholder='blurred'
                                     width={120}
@@ -75,7 +75,7 @@ const Header = ({ layout }) => {
                             ) || (
                                 !headerChangeColor &&
                                 <StaticImage
-                                    src='../../images/white-mc.png'
+                                    src='../../images/logos/medical-village-white.png'
                                     alt="Medical Village Logo"
                                     placeholder='blurred'
                                     width={120}
