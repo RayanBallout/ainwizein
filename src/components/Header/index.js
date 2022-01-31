@@ -18,9 +18,9 @@ import {
     Overlay, OpenOverlay, CloseOverlay, OverlayContent,
 } from './Header.styles'
 
-const Header = ({ path }) => {
+const Header = ({ layout }) => {
 
-    const { PrimaryColor } = chooseColor(path)
+    const { PrimaryColor } = chooseColor(layout)
 
     const [overlayStatus, setOverlayStatus] = useState(false);
 
@@ -42,7 +42,7 @@ const Header = ({ path }) => {
                         <ul>
                             {main_links.map((link) => {
                                 return (
-                                    <li key={link.id} className={path === link.url ? 'selected' : ''}>
+                                    <li key={link.id} className={layout === link.url ? 'selected' : ''}>
                                         <Link to={link.url}>{link.name}</Link>
                                     </li>
                                 )
@@ -63,22 +63,28 @@ const Header = ({ path }) => {
             <BottomHeader headerColor={headerChangeColor}>
                 <BottomContainer>
                     {
-                        headerChangeColor &&
-                        <StaticImage
-                            src='../../images/color-mc.svg'
-                            alt="Medical Village Logo"
-                            placeholder='blurred'
-                            width={120}
-                        />
+                        layout === ('/') && (
+                            (
+                                headerChangeColor &&
+                                <StaticImage
+                                    src='../../images/color-mc.svg'
+                                    alt="Medical Village Logo"
+                                    placeholder='blurred'
+                                    width={120}
+                                />
+                            ) || (
+                                !headerChangeColor &&
+                                <StaticImage
+                                    src='../../images/white-mc.png'
+                                    alt="Medical Village Logo"
+                                    placeholder='blurred'
+                                    width={120}
+                                />
+                            )
+                        )
                     }
                     {
-                        !headerChangeColor &&
-                        <StaticImage
-                            src='../../images/white-mc.png'
-                            alt="Medical Village Logo"
-                            placeholder='blurred'
-                            width={120}
-                        />
+
                     }
                     <BottomButtons>
                         <SupportButton headerColor={headerChangeColor} primary={PrimaryColor}>

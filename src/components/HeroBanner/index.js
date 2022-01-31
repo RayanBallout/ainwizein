@@ -7,9 +7,9 @@ import chooseColor from '../../helpers/chooseColor'
 //styled components
 import { SuperContainer, Container, Content, CovidBanner } from './HeroBanner.styles'
 
-function HeroBanner({ path }) {
+function HeroBanner({ layout }) {
 
-    const { PrimaryColor } = chooseColor(path);
+    const { PrimaryColor } = chooseColor(layout);
 
     return (
         <SuperContainer>

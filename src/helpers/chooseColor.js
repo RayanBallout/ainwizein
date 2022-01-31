@@ -1,10 +1,10 @@
-function chooseColor(path) {
+function chooseColor(layout) {
 
     let PrimaryColor = 'lightGreen';
     let SecondaryColor = 'darkGreen';
 
-    switch (path) {
-        case '/hospital-home/':
+    switch (layout) {
+        case 'hospital':
             PrimaryColor = 'lightBlue';
             SecondaryColor = 'darkBlue';
             break;

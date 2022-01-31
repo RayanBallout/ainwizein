@@ -6,9 +6,9 @@ import chooseColor from '../../helpers/chooseColor';
 // Styled components
 import { Container, Content, Column, BottomFooter, BottomFooterContent, SocialMediaContainer } from './Footer.styles';
 
-function Footer({ path }) {
+function Footer({ layout }) {
 
-    const { PrimaryColor, SecondaryColor } = chooseColor(path)
+    const { PrimaryColor, SecondaryColor } = chooseColor(layout)
 
     return (
         <>

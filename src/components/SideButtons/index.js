@@ -8,11 +8,11 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { Container, Button, Icon, AddButton } from './SideButtons.styles'
 
 
-function SideButtons({ path }) {
+function SideButtons({ layout }) {
 
     const [click, setClick] = useState(false);
 
-    const { PrimaryColor } = chooseColor(path);
+    const { PrimaryColor } = chooseColor(layout);
 
     return (
         <Container>
