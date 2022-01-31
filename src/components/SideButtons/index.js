@@ -1,18 +1,23 @@
 import React, { useState } from 'react'
 
+import chooseColor from '../../helpers/chooseColor';
+
 import { StaticImage } from 'gatsby-plugin-image';
 
 // Styled Components
 import { Container, Button, Icon, AddButton } from './SideButtons.styles'
 
-function SideButtons() {
+
+function SideButtons({ path }) {
 
     const [click, setClick] = useState(false);
+
+    const { PrimaryColor } = chooseColor(path);
 
     return (
         <Container>
             <Button click={click}>
-                <Icon>
+                <Icon primary={PrimaryColor}>
                     <StaticImage
                         src='../../images/icons/find-doctor.svg'
                         alt="Find a doctor icon"
@@ -21,7 +26,7 @@ function SideButtons() {
                 Find a Doctor
             </Button>
             <Button click={click}>
-                <Icon>
+                <Icon primary={PrimaryColor}>
                     <StaticImage
                         src='../../images/icons/book-appointment-side.svg'
                         alt="Book and appointment icon"
@@ -30,7 +35,7 @@ function SideButtons() {
                 Book an Appointment
             </Button>
             <AddButton onClick={() => setClick(!click)} click={click}>
-                <Icon>
+                <Icon primary={PrimaryColor}>
                     <StaticImage
                         src='../../images/icons/plus-icon.svg'
                         alt="Plus icon"

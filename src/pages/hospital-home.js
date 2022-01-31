@@ -15,9 +15,9 @@ const HospitalHome = ({ path }) => {
     return (
         <Layout>
             <Header path={path} />
-            <SideButtons />
+            <SideButtons path={path} />
             <main>
-                <HeroBanner />
+                <HeroBanner path={path} />
                 <Facilities />
                 <LatestNews />
                 <PatientServices />

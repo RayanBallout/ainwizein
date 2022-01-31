@@ -53,7 +53,7 @@ export const CovidBanner = styled.div`
     position: absolute;
     bottom: 0;
     right: 2%;
-    background-color: var(--lightGreen);
+    background-color: ${({ primary }) => `var(--${primary})`};
     border-radius: 53px 53px 0 0;
     color: white;
 

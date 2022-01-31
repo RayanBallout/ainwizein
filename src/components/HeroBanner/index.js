@@ -2,11 +2,15 @@ import React from 'react'
 
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
+import chooseColor from '../../helpers/chooseColor'
 
 //styled components
 import { SuperContainer, Container, Content, CovidBanner } from './HeroBanner.styles'
 
-function HeroBanner() {
+function HeroBanner({ path }) {
+
+    const { PrimaryColor } = chooseColor(path);
+
     return (
         <SuperContainer>
             <StaticImage
@@ -23,7 +27,7 @@ function HeroBanner() {
                     <Link to='/medical-village-about' className='learn-more'>Learn More</Link>
                 </Content>
             </Container>
-            <CovidBanner>
+            <CovidBanner primary={PrimaryColor}>
                 <h3>COVID 19</h3>
                 <p>Ain WaZein is using its expertise to address the COVID-19 pandemic.</p>
                 <Link to='/covid'>Read More</Link>

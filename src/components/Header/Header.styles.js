@@ -37,7 +37,7 @@ export const LeftNav = styled.nav`
         color: #969696;
 
         li.selected{
-            color: var(--lightGreen);
+            color:${({ primary }) => `var(--${primary})`};
             position: relative;
     
             &:before{
@@ -45,7 +45,7 @@ export const LeftNav = styled.nav`
                 position: absolute;
                 width:100%;
                 height: 4px;
-                background-color: var(--lightGreen);
+                background-color: ${({ primary }) => `var(--${primary})`};
                 bottom:-14px;
                 left:0;
                 border-radius: 20px 20px 0 0;
@@ -129,9 +129,9 @@ export const BottomButtons = styled.div`
 
 export const SupportButton = styled.div`
     a{
-        color: ${props => props.headerColor ? 'var(--lightGreen)' : 'white'};
+        color: ${props => props.headerColor ? `var(--${props.primary})` : 'white'};
         padding: 12px 40px;
-        border: 2px solid ${props => props.headerColor ? 'var(--lightGreen)' : 'white'};
+        border: 2px solid ${props => props.headerColor ? `var(--${props.primary})` : 'white'};
         border-radius: 25px;
         text-decoration: none;
     }
@@ -173,7 +173,7 @@ export const Overlay = styled.div`
     bottom:0;
     left:0;
     right:0;
-    background-color:var(--lightGreen);
+    background-color:${({ primary }) => `var(--${primary})`};
     padding-top: 94px;
     opacity: ${props => props.show ? '1' : '0'};
     display: ${props => props.show ? 'block' : 'none'};

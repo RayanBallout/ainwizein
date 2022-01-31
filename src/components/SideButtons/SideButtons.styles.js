@@ -38,7 +38,7 @@ export const Button = styled.div`
 `;
 
 export const Icon = styled.div`
-    background-color: var(--lightGreen);
+    background-color: ${({ primary }) => `var(--${primary})`};
     padding: 12px;
     border-radius: 50%;
     box-shadow: 2px 4px 4px 0 rgb(21 100 84);

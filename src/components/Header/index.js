@@ -3,6 +3,9 @@ import React, { useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 
+// helper
+import chooseColor from '../../helpers/chooseColor';
+
 //Links
 import main_links from '../../constants/links';
 
@@ -16,6 +19,8 @@ import {
 } from './Header.styles'
 
 const Header = ({ path }) => {
+
+    const { PrimaryColor } = chooseColor(path)
 
     const [overlayStatus, setOverlayStatus] = useState(false);
 
@@ -33,7 +38,7 @@ const Header = ({ path }) => {
         <div>
             <TopHeader>
                 <TopContainer>
-                    <LeftNav>
+                    <LeftNav primary={PrimaryColor}>
                         <ul>
                             {main_links.map((link) => {
                                 return (
@@ -76,7 +81,7 @@ const Header = ({ path }) => {
                         />
                     }
                     <BottomButtons>
-                        <SupportButton headerColor={headerChangeColor}>
+                        <SupportButton headerColor={headerChangeColor} primary={PrimaryColor}>
                             <Link to='/support-us'>Support Us</Link>
                         </SupportButton>
                         <OpenOverlay onClick={() => setOverlayStatus(true)}>
@@ -87,7 +92,7 @@ const Header = ({ path }) => {
                     </BottomButtons>
                 </BottomContainer>
             </BottomHeader>
-            <Overlay show={overlayStatus}>
+            <Overlay show={overlayStatus} primary={PrimaryColor}>
                 <div className="topNav">
                     <OverlaySupportButton show={overlayStatus}>
                         <Link to='/support-us'>Support Us</Link>
