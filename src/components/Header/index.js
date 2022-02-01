@@ -62,9 +62,7 @@ const Header = ({ layout }) => {
             </TopHeader>
             <BottomHeader headerColor={headerChangeColor}>
                 <BottomContainer>
-
                     <ChooseLogo layout={layout} headerChangeColor={headerChangeColor} />
-
                     <BottomButtons>
                         <SupportButton headerColor={headerChangeColor} primary={PrimaryColor}>
                             <Link to='/support-us'>Support Us</Link>

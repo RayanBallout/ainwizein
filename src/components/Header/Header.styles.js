@@ -105,10 +105,6 @@ export const BottomContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items:center;
-
-    img{
-        max-width:124px;
-    }
 `;
 
 export const BottomButtons = styled.div`

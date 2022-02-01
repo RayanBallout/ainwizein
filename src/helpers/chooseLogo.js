@@ -7,18 +7,18 @@ function ChooseLogo({ layout, headerChangeColor }) {
             if (headerChangeColor) {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-color.svg'
+                        src='../images/logos/medical-village-color.svg'
                         alt="Medical Village Logo"
-                        placeholder='blurred'
+                        placeholder='TracedSVG'
                         width={120}
                     />
                 )
             } else {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-white.png'
+                        src='../images/logos/medical-village-white.png'
                         alt="Medical Village Logo"
-                        placeholder='blurred'
+                        placeholder='TracedSVG'
                         width={120}
                     />
                 )
@@ -28,19 +28,19 @@ function ChooseLogo({ layout, headerChangeColor }) {
             if (headerChangeColor) {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-color.svg'
-                        alt="Medical Village Logo"
-                        placeholder='blurred'
-                        width={120}
+                        src='../images/logos/hospital-color.svg'
+                        alt="Hospital Logo"
+                        placeholder='TracedSVG'
+                        width={188}
                     />
                 )
             } else {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-white.png'
-                        alt="Medical Village Logo"
-                        placeholder='blurred'
-                        width={120}
+                        src='../images/logos/hospital-white.png'
+                        alt="Hospital Logo"
+                        placeholder='TracedSVG'
+                        width={188}
                     />
                 )
             }
@@ -49,19 +49,19 @@ function ChooseLogo({ layout, headerChangeColor }) {
             if (headerChangeColor) {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-color.svg'
-                        alt="Medical Village Logo"
-                        placeholder='blurred'
-                        width={120}
+                        src='../images/logos/nursing-color.svg'
+                        alt="Nursing Logo"
+                        placeholder='TracedSVG'
+                        width={180}
                     />
                 )
             } else {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-white.png'
-                        alt="Medical Village Logo"
-                        placeholder='blurred'
-                        width={120}
+                        src='../images/logos/nursing-white.png'
+                        alt="Nursing Logo"
+                        placeholder='TracedSVG'
+                        width={180}
                     />
                 )
             }
@@ -70,19 +70,19 @@ function ChooseLogo({ layout, headerChangeColor }) {
             if (headerChangeColor) {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-color.svg'
-                        alt="Medical Village Logo"
-                        placeholder='blurred'
-                        width={120}
+                        src='../images/logos/geriatric-color.svg'
+                        alt="Geriatric Logo"
+                        placeholder='TracedSVG'
+                        width={180}
                     />
                 )
             } else {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-white.png'
-                        alt="Medical Village Logo"
-                        placeholder='blurred'
-                        width={120}
+                        src='../images/logos/geriatric-white.png'
+                        alt="Geriatric Logo"
+                        placeholder='TracedSVG'
+                        width={180}
                     />
                 )
             }
@@ -91,19 +91,19 @@ function ChooseLogo({ layout, headerChangeColor }) {
             if (headerChangeColor) {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-color.svg'
-                        alt="Medical Village Logo"
-                        placeholder='blurred'
-                        width={120}
+                        src='../images/logos/oncology-color.svg'
+                        alt="Oncology Logo"
+                        placeholder='TracedSVG'
+                        width={180}
                     />
                 )
             } else {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-white.png'
-                        alt="Medical Village Logo"
-                        placeholder='blurred'
-                        width={120}
+                        src='../images/logos/oncology-white.svg'
+                        alt="Oncology Logo"
+                        placeholder='TracedSVG'
+                        width={180}
                     />
                 )
             }
@@ -112,19 +112,19 @@ function ChooseLogo({ layout, headerChangeColor }) {
             if (headerChangeColor) {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-color.svg'
-                        alt="Medical Village Logo"
-                        placeholder='blurred'
-                        width={120}
+                        src='../images/logos/home-care-color.svg'
+                        alt="Home Care Logo"
+                        placeholder='TracedSVG'
+                        width={180}
                     />
                 )
             } else {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-white.png'
-                        alt="Medical Village Logo"
-                        placeholder='blurred'
-                        width={120}
+                        src='../images/logos/home-care-white.png'
+                        alt="Home Care Logo"
+                        placeholder='TracedSVG'
+                        width={180}
                     />
                 )
             }
@@ -133,19 +133,19 @@ function ChooseLogo({ layout, headerChangeColor }) {
             if (headerChangeColor) {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-color.svg'
+                        src='../images/logos/medical-village-color.svg'
                         alt="Medical Village Logo"
-                        placeholder='blurred'
-                        width={120}
+                        placeholder='TracedSVG'
+                        width={180}
                     />
                 )
             } else {
                 return (
                     <StaticImage
-                        src='../../images/logos/medical-village-white.png'
+                        src='../images/logos/medical-village-white.png'
                         alt="Medical Village Logo"
-                        placeholder='blurred'
-                        width={120}
+                        placeholder='TracedSVG'
+                        width={180}
                     />
                 )
             }
