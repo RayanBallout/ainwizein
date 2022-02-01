@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
-import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 
 // helper
 import chooseColor from '../../helpers/chooseColor';
+import ChooseLogo from '../../helpers/chooseLogo';
 
 //Links
 import main_links from '../../constants/links';
@@ -62,30 +62,9 @@ const Header = ({ layout }) => {
             </TopHeader>
             <BottomHeader headerColor={headerChangeColor}>
                 <BottomContainer>
-                    {
-                        layout === ('medical-village') && (
-                            (
-                                headerChangeColor &&
-                                <StaticImage
-                                    src='../../images/logos/medical-village-color.svg'
-                                    alt="Medical Village Logo"
-                                    placeholder='blurred'
-                                    width={120}
-                                />
-                            ) || (
-                                !headerChangeColor &&
-                                <StaticImage
-                                    src='../../images/logos/medical-village-white.png'
-                                    alt="Medical Village Logo"
-                                    placeholder='blurred'
-                                    width={120}
-                                />
-                            )
-                        )
-                    }
-                    {
 
-                    }
+                    <ChooseLogo layout={layout} headerChangeColor={headerChangeColor} />
+
                     <BottomButtons>
                         <SupportButton headerColor={headerChangeColor} primary={PrimaryColor}>
                             <Link to='/support-us'>Support Us</Link>
