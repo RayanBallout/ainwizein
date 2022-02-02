@@ -26,13 +26,17 @@ const Header = ({ layout }) => {
 
     const [headerChangeColor, setHeaderChangeColor] = useState(false)
 
-    window.onscroll = function () {
-        if (window.pageYOffset > 60) {
-            setHeaderChangeColor(true);
-        } else {
-            setHeaderChangeColor(false);
-        }
-    };
+    const isBrowser = () => typeof window !== "undefined"
+
+    if (isBrowser()) {
+        window.onscroll = function () {
+            if (window.pageYOffset > 60) {
+                setHeaderChangeColor(true);
+            } else {
+                setHeaderChangeColor(false);
+            }
+        };
+    }
 
     return (
         <div>
